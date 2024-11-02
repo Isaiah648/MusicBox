@@ -1,5 +1,5 @@
 # Mantine Next Template
 
-Get started with the template by clicking `Use this template` button on the top of the page.
+In development, using Mantine for the foundational components.
 
 [Documentation](https://mantine.dev/guides/next/)
