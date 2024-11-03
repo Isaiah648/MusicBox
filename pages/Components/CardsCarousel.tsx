@@ -38,21 +38,21 @@ function Card({ image, title, category }: CardProps) {
 const data = [
   {
     image:
-      'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Best forests to visit in North America',
-    category: 'nature',
+      'https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2020/07/03/84f0a15a-a570-11ea-8ea0-d7434be00753_image_hires_172942.jpeg',
+    title: 'Billie Eilish',
+    category: 'Pop',
   },
   {
     image:
-      'https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Hawaii beaches review: better than you think',
-    category: 'beach',
+      'https://m.media-amazon.com/images/I/61RTtaOvbbL._AC_UF894,1000_QL80_.jpg',
+    title: 'The Backseat Lovers',
+    category: 'Indie',
   },
   {
     image:
-      'https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Mountains at night: 12 best locations to enjoy the view',
-    category: 'nature',
+      'https://assets0.dostuffmedia.com/uploads/aws_asset/aws_asset/20217954/aaaaf2eb-34e1-4ae7-b4d1-a7b9de8c4ff4.jpg',
+    title: 'Hotel Fiction',
+    category: 'Indie/Pop',
   },
   {
     image:
@@ -68,9 +68,9 @@ const data = [
   },
   {
     image:
-      'https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Active volcanos reviews: travel at your own risk',
-    category: 'nature',
+      'https://i0.wp.com/countrycentral.com/wp-content/uploads/2024/08/456434379_1068290887997793_368778514291395318_n.jpg?resize=1400%2C789&ssl=1',
+    title: 'Noah Kahan',
+    category: 'Indie/Folk',
   },
 ];
 
