@@ -2,20 +2,16 @@ import { Button, Text, Container } from "@mantine/core";
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
-export default function dashboardPage() {
+export default function SpotifyProfilePage() {
 
   const router = useRouter();
 
   const handleExternalLink = () => {
-    window.open('https://open.spotify.com/',"_blank");
+    window.location.href = 'https://open.spotify.com/';
   }
 
-  const switchPageHome = () => {
-    router.push('/');
-  };
-
-  const switchPageSpotify = () => {
-    router.push('/spotifyProfile');
+  const switchPageDash = () => {
+    router.push('/dashboard');
   };
 
     return (
@@ -26,26 +22,18 @@ export default function dashboardPage() {
             fw={700}
             variant="gradient"
             gradient={{ from: 'yellow', to: 'gray', deg: 90 }}
+
             >
-                Music App
+              Music App
             </Text>
 
             <Button 
             color="#9775fa"
             size="xl"
-            onClick={switchPageHome}
+            onClick={switchPageDash}
             variant="light"
             >
-                Home
-            </Button>
-
-            <Button 
-            color="#9775fa"
-            size="xl"
-            onClick={switchPageSpotify}
-            variant="light"
-            >
-                Spotify Profile
+              Dashboard
             </Button>
 
             <Button 
@@ -54,7 +42,7 @@ export default function dashboardPage() {
             onClick={handleExternalLink}
             variant="light"
             >
-                Spotify!
+              Spotify!
             </Button>
 
         </Container>

@@ -56,15 +56,15 @@ const data = [
   },
   {
     image:
-      'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Aurora in Norway: when to visit for best experience',
-    category: 'nature',
+      'https://www.joepthehyena.com/sites/g/files/g2000018486/files/2024-06/JoeP_GSV_FrontCover-1.jpg',
+    title: 'Joe P',
+    category: 'Indie/Pop',
   },
   {
     image:
-      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Best places to visit this winter',
-    category: 'tourism',
+      'https://media.glamour.com/photos/6266f5c95fad272e58d2f93f/4:3/w_2507,h_1880,c_limit/672098296',
+    title: 'Lorde',
+    category: 'Pop',
   },
   {
     image:

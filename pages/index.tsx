@@ -1,7 +1,10 @@
-import { Button, Group, TextInput, Text, Container, Title } from "@mantine/core";
+import { Button, Group, TextInput, Text, Container, Title, Stack, Center } from "@mantine/core";
 import CardsCarousel from "./Components/CardsCarousel";
+import NavBarMinimal from "./Components/NavBarMinimal";
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { InlineInputClasses } from "@mantine/core/lib/components/InlineInput";
+import classes from './index.module.css';
 
 {/* npm run dev --turbo */}
 
@@ -52,38 +55,43 @@ export default function IndexPage() {
 
   return (
     <Container size="mid">
-      <Group mt={50} justify="center">
 
-        <Text
-          size="xl"
+    {/*<NavBarMinimal />*/}
+
+      <Stack mt={50} align="center">
+
+        <Center><Text
+          size="200%"
           fw={700}
           variant="gradient"
           gradient={{ from: 'yellow', to: 'gray', deg: 90 }}
-
         >
           Music App
-        </Text>
+        </Text></Center>
 
         <CardsCarousel />
-        
+
         <TextInput 
-          label = "Enter"
-          description="Enter prompt:"
-          placeholder="Can you explain how songs are made?"
-          value={question}
-          onChange={(event) => setQuestion(event.currentTarget.value)}
-          disabled={isLoading}
+        label = "Enter"
+        description="Enter prompt:"
+        placeholder="Can you explain how songs are made?"
+        value={question}
+        onChange={(event) => setQuestion(event.currentTarget.value)}
+        disabled={isLoading}
+        size="md"
         />
 
         <Button 
           onClick={generateAnswer}
           loading={isLoading}
           disabled={!question.trim()}
+          size="xl"
         >
           Generate
         </Button>
 
-        <Text>
+        <Text
+          className={classes.textArea}>
           {response}
         </Text>
 
@@ -95,11 +103,12 @@ export default function IndexPage() {
             size="xl"
             onClick={switchPage}
           >
-              This is just the beginning!
+              Dashboard
           </Button>
         </Group>
 
-      </Group>
+      </Stack>
+
     </Container>
   );
 }

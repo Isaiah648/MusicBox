@@ -1,3 +1,8 @@
 .body {
     background-color:  #5c8a8a;
 }
+
+.textArea {
+    text-align: 'center';
+    width: 50%;
+}
