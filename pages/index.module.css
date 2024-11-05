@@ -1,8 +1,17 @@
-.body {
-    background-color:  #5c8a8a;
+.body-background {
+    background-color:  #666699;
+    min-height: '100vh',
+
 }
 
 .textArea {
     text-align: 'center';
     width: 50%;
+}
+
+.nav {
+    height: '100vh';
+    position: 'sticky';
+    top: 0;
+    padding-top: 100px;
 }

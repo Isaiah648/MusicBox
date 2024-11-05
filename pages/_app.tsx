@@ -1,9 +1,14 @@
 import "@mantine/core/styles.css";
 import Head from "next/head";
-import { MantineProvider } from "@mantine/core";
+import { useState } from 'react';
+import { MantineProvider, Button } from "@mantine/core";
 import { theme } from "../theme";
 
 export default function App({ Component, pageProps }: any) {
+  const [colorScheme, setColorScheme] = useState('light');
+
+  const toggleColorScheme = () => setColorScheme(colorScheme === 'light' ? 'dark' : 'light');
+
   return (
     <MantineProvider theme={theme}>
       <Head>

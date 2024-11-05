@@ -1,4 +1,4 @@
-import { Button, Group, TextInput, Text, Container, Title, Stack, Center } from "@mantine/core";
+import { Button, Group, TextInput, Text, Container, Title, Stack, Center, Flex, Box } from "@mantine/core";
 import CardsCarousel from "./Components/CardsCarousel";
 import NavBarMinimal from "./Components/NavBarMinimal";
 import { useState } from 'react';
@@ -54,60 +54,70 @@ export default function IndexPage() {
   };
 
   return (
-    <Container size="mid">
+    <Container 
+      size="mid"
+      className="body-background"
+    >
+      <Flex>
 
-    {/*<NavBarMinimal />*/}
+        <NavBarMinimal/>
 
-      <Stack mt={50} align="center">
+        <Box style={{ flex: 1}}>
 
-        <Center><Text
-          size="200%"
-          fw={700}
-          variant="gradient"
-          gradient={{ from: 'yellow', to: 'gray', deg: 90 }}
-        >
-          Music App
-        </Text></Center>
+          <Stack mt={50} align="center">
 
-        <CardsCarousel />
+            <Center><Text
+              size="200%"
+              fw={700}
+              variant="gradient"
+              gradient={{ from: 'yellow', to: 'gray', deg: 90 }}
+            >
+              Music App
+            </Text></Center>
 
-        <TextInput 
-        label = "Enter"
-        description="Enter prompt:"
-        placeholder="Can you explain how songs are made?"
-        value={question}
-        onChange={(event) => setQuestion(event.currentTarget.value)}
-        disabled={isLoading}
-        size="md"
-        />
+            <CardsCarousel />
 
-        <Button 
-          onClick={generateAnswer}
-          loading={isLoading}
-          disabled={!question.trim()}
-          size="xl"
-        >
-          Generate
-        </Button>
+            <TextInput 
+            label = "Enter"
+            description="Enter prompt:"
+            placeholder="Can you explain how songs are made?"
+            value={question}
+            onChange={(event) => setQuestion(event.currentTarget.value)}
+            disabled={isLoading}
+            size="md"
+            />
 
-        <Text
-          className={classes.textArea}>
-          {response}
-        </Text>
+            <Button 
+              onClick={generateAnswer}
+              loading={isLoading}
+              disabled={!question.trim()}
+              size="xl"
+            >
+              Generate
+            </Button>
 
-        <Group justify="center">
-          <Button 
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
-            color="#9775fa"
-            size="xl"
-            onClick={switchPage}
-          >
-              Dashboard
-          </Button>
-        </Group>
+            <Text
+              className={classes.textArea}>
+              {response}
+            </Text>
 
-      </Stack>
+            <Group justify="center">
+              <Button 
+                variant="gradient"
+                gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+                color="#9775fa"
+                size="xl"
+                onClick={switchPage}
+              >
+                  Dashboard
+              </Button>
+            </Group>
+
+          </Stack>
+        
+        </Box>
+      
+      </Flex>
 
     </Container>
   );
