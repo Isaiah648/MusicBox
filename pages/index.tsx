@@ -78,7 +78,7 @@ export default function IndexPage() {
             <CardsCarousel />
 
             <TextInput 
-            label = "Enter"
+            label = "Ask for song recommendations"
             description="Enter prompt:"
             placeholder="Can you explain how songs are made?"
             value={question}
