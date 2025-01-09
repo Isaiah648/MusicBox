@@ -30,36 +30,43 @@ export default function dashboardPage() {
                 Music App
             </Text></Center>
 
-            <Button 
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
-            color="#9775fa"
-            size="xl"
-            onClick={switchPageHome}
-            
-            >
-                Home
-            </Button>
+            <div>
+              <Button 
+              variant="gradient"
+              gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+              color="#9775fa"
+              size="xl"
+              onClick={switchPageHome}
+              style={{marginRight: '10px'}}
+              >
+                  Home
+              </Button>
 
-            <Button 
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
-            color="#9775fa"
-            size="xl"
-            onClick={switchPageSpotify}
-            >
-                Spotify Profile
-            </Button>
+              <Button 
+              variant="gradient"
+              gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+              color="#9775fa"
+              size="xl"
+              onClick={switchPageSpotify}
+              style={{marginRight: '10px'}}
+              >
+                  Spotify Profile
+              </Button>
 
-            <Button 
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
-            color="#9775fa"
-            size="xl"
-            onClick={handleExternalLink}
-            >
-                Spotify!
-            </Button>
+              <Button 
+              variant="gradient"
+              gradient={{ from: 'blue', to: 'cyan', deg: 90 }}
+              color="#9775fa"
+              size="xl"
+              onClick={handleExternalLink}
+              >
+                  Spotify!
+              </Button>
+            </div>
+
+            <div>
+
+            </div>
 
         </Container>
     )
