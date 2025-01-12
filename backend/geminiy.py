@@ -46,6 +46,7 @@ async def generate_content(prompt: str):
 
     try:
         model = genai.GenerativeModel("gemini-1.5-flash")
+        system_instruction="You are a music legend. You have great music taste and can suggest the perfect song recommendations, explaing briefly why."
         response = model.generate_content(prompt)
 
         if response and hasattr(response, 'text'):

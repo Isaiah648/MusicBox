@@ -80,7 +80,7 @@ export default function IndexPage() {
             <TextInput 
             label = "Ask for song recommendations"
             description="Enter prompt:"
-            placeholder="Can you explain how songs are made?"
+            placeholder="I love Billie's new album, what else can I try?"
             value={question}
             onChange={(event) => setQuestion(event.currentTarget.value)}
             disabled={isLoading}

@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { Container, Text, Center, Image, Grid, rem, Button } from "@mantine/core";
 import { useRouter } from 'next/router';
+import * as dotenv from 'dotenv';
 
-const clientId = "776fd21ed8da4eafba8451a11fcd086f"; // Your client ID
+dotenv.config();
+// Access the API key variable from dotenv
+const clientId: string = process.env.SPOTIFY_API_KEY as string ?? 'error'; // Your client ID
 
 export default function SpotifyProfile() {
   const [profile, setProfile] = useState<any>(null);
